@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    .carouselCenter {
+      margin: auto;
+      width: 90%;
+    }
+
+    .contentCenter,
+    .card-body p,
+    div>h3 {
+      text-align: center;
+      margin: auto;
+      width: 90%;
+    }
+
+    .card-body img {
+      width: 84vW;
+      height: 58vW;
+      margin: auto;
+      display: block;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Mk PermaCulture Farm</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color:#4c5d5a!important">
+    <a class="navbar-brand" href="index.html" >Mk PermaCulture Farm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Sign-Up for NewsLetter
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" >Sign-Up for NewsLetter</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            We will message you the notifications and
+            new blogs that are relevant to you and not disclose your details to anybody.
+            <!-- here add the form to get details -->
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">How many Articles You want us to send To you weekly?</label>
+                <select class="form-control" id="exampleFormControlSelect1" required>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Do you want to Say Something?</label>
+                <textarea  class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal" id="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" id="Home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            PermaCulture Stages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="stage1.html">stage 1</a>
+            <a class="dropdown-item" href="stage2.html">stage 2</a>
+            <a class="dropdown-item" href="stage3.html">stage 3</a>
+          </div>
+        </li>
+
+      </ul>
+     
+
+    </div>
+  </nav>
+  <!-- adding a carousel -->
+  <div id="carouselExampleCaptions" class="carousel carousel-fade carouselCenter my-1" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carousel1.jpeg" class="d-block w-100" alt="Farm">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Mk PermaFarm!!</h5>
+          <p>Far from the noise of city you are in the lap of Nature.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel2.jpeg" class="d-block w-100" alt="PermaFarm">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Mk PermaFarm!!</h5>
+          <p>Far from the noise of city you are in the lap of Nature.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container-fluid my-1">
+    <h3 class="container-fluid bg-light">
+      What is PermaCulture??
+    </h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, iure quasi deserunt exercitationem, porro
+      aspernatur non unde velit enim, dolor similique. Aliquam officia fugiat exercitationem saepe dolorum aspernatur,
+      ex expedita consequatur possimus sed, nostrum dolore itaque porro, obcaecati eum modi! Temporibus, reprehenderit
+      iusto corporis rerum esse dolorem, a id commodi, animi voluptatum laudantium vel dignissimos. Fugiat veritatis id
+      perferendis atque ipsa minus in ullam nihil adipisci hic aperiam sint facere culpa aliquid explicabo vero placeat
+      deserunt rem cum modi inventore rerum, sit repellat. Porro error quam totam magnam molestias et ipsum incidunt
+      doloribus. Quo ratione sunt dolor adipisci facere nostrum id blanditiis earum, at quod consectetur laboriosam
+      necessitatibus delectus fuga, maiores architecto cum commodi in minus. At, exercitationem? Accusamus excepturi ex
+      delectus harum.</p>
+
+  </div>
+
+  <!-- now benefits of PermaCulture -->
+  <div class="container-fluid">
+    <h3 class="bg-light my-1">Benefits of PermaCulture </h3>
+    <div class="accordion" id="Benefits">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>Benefit #1</strong>
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#Benefits">
+          <div class="card-body">
+            <img src="Images/carousel2.jpeg" alt="random" class="my-2" height="500px" width="inherit">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod veritatis quaerat quis expedita
+              possimus alias cupiditate suscipit, magni iusto deserunt voluptatem numquam voluptas, cum facere molestias
+              id provident nam pariatur adipisci quam corrupti rerum aperiam consequatur. Consequatur harum dolor ullam
+              voluptates quas, delectus ab laborum placeat obcaecati natus asperiores saepe temporibus voluptatum
+              perspiciatis voluptatem maiores tenetur animi enim magnam? Quaerat iusto inventore asperiores perspiciatis
+              praesentium veritatis maxime tenetur ducimus officiis explicabo doloremque ratione laudantium nisi
+              suscipit accusamus, quam commodi earum quisquam, saepe tempora iste. Consequuntur quas quaerat cumque qui,
+              ullam sed beatae ab sunt ipsa cupiditate dolor saepe voluptate dolore non placeat vero rem facilis
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>Benefit #2</strong>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#Benefits">
+          <div class="card-body">
+            <img src="Images/carousel2.jpeg" alt="random" class="my-2" height="500px" width="inherit">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod veritatis quaerat quis expedita
+              officiis a veniam saepe dignissimos quas temporibus necessitatibus aspernatur, natus porro neque
+              consectetur eaque enim modi repudiandae sit sunt laborum dolore corrupti deserunt perspiciatis eveniet
+              quidem. Et impedit a totam qui rem voluptate, voluptates iste repellat exercitationem autem aliquam
+              veritatis officiis. Mollitia quod, blanditiis quidem rem ea obcaecati iusto nam! Totam exercitationem
+              doloribus perspiciatis unde excepturi distinctio explicabo ipsam deserunt consectetur nihil facere
+              pariatur fuga quidem, corrupti, ipsa qui, laborum voluptatem? Ipsum molestiae ab placeat adipisci, facere
+              alias? Voluptates modi veritatis neque? Inventore, nulla at?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>Benefit #3</strong>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#Benefits">
+          <div class="card-body container-fluid">
+            <img src="Images/carousel2.jpeg" alt="random" class="my-2" height="500px" width="inherit">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod veritatis quaerat quis expedita
+              quidem. Et impedit a totam qui rem voluptate, voluptates iste repellat exercitationem autem aliquam
+              veritatis officiis. Mollitia quod, blanditiis quidem rem ea obcaecati iusto nam! Totam exercitationem
+              doloribus perspiciatis unde excepturi distinctio explicabo ipsam deserunt consectetur nihil facere
+              pariatur fuga quidem, corrupti, ipsa qui, laborum voluptatem? Ipsum molestiae ab placeat adipisci, facere
+              alias? Voluptates modi veritatis neque? Inventore, nulla at?
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Container-fluid mx-2 my-2">
+    <h3 class="bg-light contentCenter">Mk PermaFarm</h3>
+    <p class="contentCenter">We are a small organisation that aspire to grow big in the coming
+      Years by the will of Almighty, we desire to change the practice of farming
+      in local communities in a sustainable way , and at the same time we work to upgrade the financial condition of the
+      farmers to empower the farming Community.</p>
+  </div>
+  <hr>
+
+  <footer>
+    <div class="my-2 contentCenter">
+      <h4 style="margin: auto;display: block;width: 60%;">All rights Reserved &copy; 2020 Mk PermaFarm</h4>
+      <a href="#carouselExampleCaptions"><i class="fa fa-chevron-up"></i></a>
+      
+    </div>
+  </footer>
+  <hr>
+  <script src="index.js"></script>
+  <!-- <h1>Welcome to Mozammil'S PermaCulture Farm</h1> -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
